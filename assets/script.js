@@ -112,6 +112,7 @@ function updateSug(){
 
 function updateTotal()
 {
+   thTotalCount.textContent = gbCount + ccCount + sugCount;
    thTotalPrice.textContent = `$${(gbTotalPrice + ccTotalPrice + sugTotalPrice).toLocaleString(
       'en-US',
       {  minimumFractionDigits: 2 }
